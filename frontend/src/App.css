@@ -1,0 +1,287 @@
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+.games-section {
+  margin-bottom: 30px;
+}
+
+.game-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.game-button {
+  padding: 10px 15px;
+  border: 2px solid;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: #333;
+}
+
+.game-button:hover {
+  transform: scale(1.05);
+}
+
+.game-button.selected {
+  opacity: 0.5;
+}
+
+.game-button.starter-games {
+  border-color: #ffa500;
+}
+
+.game-button.ender-games {
+  border-color: #90ee90;
+}
+
+.play-games-button {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.play-games-button:hover {
+  background-color: #007B9A;
+}
+
+.play-games-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.game-chart-section {
+  margin-top: 30px;
+}
+
+.game-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.starter-game-slot,
+.ender-game-slot {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.teams-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.team-label {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.main-games-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.team-games {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.game-slot {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.game-slot.team1 {
+  background-color: #ffcccb;
+}
+
+.game-slot.team2 {
+  background-color: #add8e6;
+}
+
+.game-slot.starter {
+  background-color: #ffa500;
+}
+
+.game-slot.ender {
+  background-color: #90ee90;
+}
+
+.theme-label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.theme-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-section {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+
+.input, .select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .form-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+.game-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.starter-game-slot,
+.ender-game-slot {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.game-slot {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.game-slot.starter {
+  background-color: #ffa500;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.game-slot.ender {
+  background-color: #90ee90;
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.teams-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.team-label {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.main-games-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.team-games {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.game-slot.team1 {
+  background-color: #ffcccb;
+}
+
+.game-slot.team2 {
+  background-color: #add8e6;
+}
+
+.theme-label {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
